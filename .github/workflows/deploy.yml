@@ -17,7 +17,10 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '8.0'
-
+     
+      - name: Deploy to Production
+        uses: pantaSanjesh/actions-config@main
+      
       - name: Publish the project to docs folder
         run: dotnet publish -c Release -o ./docs/wwwroot
 
