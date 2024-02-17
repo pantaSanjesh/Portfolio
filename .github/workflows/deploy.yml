@@ -19,7 +19,7 @@ jobs:
           dotnet-version: '8.0'
      
       - name: Deploy to Production
-        uses: pantaSanjesh/actions-config@main
+        uses: pantaSanjesh/github-actions@main
       
       - name: Publish the project to docs folder
         run: dotnet publish -c Release -o ./docs/wwwroot
