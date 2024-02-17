@@ -22,7 +22,7 @@ jobs:
         run: dotnet publish -c Release -o ./docs/wwwroot
 
       - name: Deploy to GitHub Pages
-        uses: pantaSanjesh/Portfolio@v1
+        uses: pantaSanjesh/Portfolio
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
