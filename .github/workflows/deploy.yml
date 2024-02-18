@@ -20,7 +20,6 @@ jobs:
       - name: Deploy to Production
         uses: pantaSanjesh/github-actions@main
     
-      
       - name: Publish the project to docs folder
         run: dotnet publish -c Release -o ./docs/wwwroot
 
